@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* process.stdout.write('prompt > ');
 
 process.stdin.on('data', (data) => {
@@ -18,3 +19,12 @@ process.stdin.on('data', (data) => {
     }
 
  }))
+=======
+module.exports = function() {
+    process.stdin.on('data', (data) => {
+        const cmd = data.toString().trim();
+        process.stdout.write(process.cwd());
+        process.stdout.write('\nprompt > ');
+    })
+}
+>>>>>>> d29224525c16ce1772cf5c46d56eeab7bbd3c047
