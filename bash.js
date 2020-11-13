@@ -1,3 +1,5 @@
+const fs = require('./ls')
+const pwd = require('./pwd');
 //Output a prompt
 process.stdout.write('prompt > ');
 
@@ -7,7 +9,6 @@ process.stdin.on('data', (data) => {
     process.stdout.write('\nprompt > ')
 });
 
-const pwd = require('./pwd');
-const fs = require('fs');
-fs();
-pwd();
+pwd()
+
+fs()
