@@ -7,6 +7,7 @@ process.stdin.on('data', (data) => {
     process.stdout.write('\nprompt > ')
 });
 
-const pwd = require('./pwd.js');
-
-pwd()
+const pwd = require('./pwd');
+const fs = require('fs');
+fs();
+pwd();
