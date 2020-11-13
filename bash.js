@@ -17,7 +17,14 @@ process.stdin.on('data', (data) => {
     process.stdout.write('\nprompt > ')
 });
 
+<<<<<<< HEAD
 const pwd = require('./pwd.js');
 
 pwd()
 >>>>>>> d29224525c16ce1772cf5c46d56eeab7bbd3c047
+=======
+const pwd = require('./pwd');
+const fs = require('fs');
+fs();
+pwd();
+>>>>>>> 8e97b8ffc6bb4fea3123971f08f8e9f84f935d70
