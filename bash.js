@@ -3,9 +3,9 @@ process.stdout.write('prompt > ');
 
 process.stdin.on('data', (data) => {
     const cmd = data.toString().trim();
+    const pwd = require('./pwd');
     if (cmd === 'pwd') {
-        process.stdout.write(process.cwd());
-        process.stdout.write('\nprompt > ');
+        pwd;
     } else {
         process.stdout.write(data);
         process.stdout.write('\nprompt > ');
